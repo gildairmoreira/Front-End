@@ -1,48 +1,111 @@
-#banner {
-	width:100%;
+header{
+    background: grey;
+    padding: 20px 0px;
 }
 
-.principal{
-	background: #CCCCCC;
-	padding: 30px;
+div.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
 
-.titulo-principal {
-	padding-left: 20px;
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+
 }
 
-.titulo-centralizado {
-	text-align: center
+
+nav li{
+    display: inline;
+    margin: 0px 0px 0px 15px;
 }
 
-p {
-	text-align: center;
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 8px;
 }
 
-#missao {
-	font-size: 20px
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
 }
 
-em strong {
-	color: #FF0000;
+ul.produtos{
+    width: 940px;
+    padding: 50px 0;
+    margin: 0px auto;
 }
 
-.itens {
-	font-style: italic
+ul.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+ul.produtos li:hover{
+    border-color: #c78c19;
+}
+ul.produtos li:active{
+    border-color: #088c19;
 }
 
-.beneficios {
-	background: #FFFFFF;
-	padding: 20px;
+
+.produtos li:hover h2{
+    font-size: 34px;
 }
 
-ul {
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
+ul.produtos h2{
+    font-size: 30px;
+    font-weight:bold;
 }
 
-.imagembeneficios {
-	width: 50%;
+.produto-descricao{
+    font-size: 18px;
+}
+
+.preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background-image: url(../imagens/bg.jpg);
+}
+.copy{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+}
+
+form label {
+    display: block;
+    font-size: 20px;
+    margin: 0px 0px 10px;
+}   
+form input {
+    display: block;
+    margin: 0px 0px 20px;
+    padding: 10px 25px;
+    width: 50%;
 }
