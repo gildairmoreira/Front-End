@@ -122,10 +122,23 @@ form label,form p,form legend {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    transition: 1s background;
+    transition: 1s;
     cursor: pointer;
 }
 
 .enviar:hover{
     background-color: rgb(226, 124, 0);
+    transform: scale(1.2);
+}
+table{
+    margin: 20px 0 40px;
+}
+thead{
+    background: gray;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid black;
+    padding: 15px;
 }
