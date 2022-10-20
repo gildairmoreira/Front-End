@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import url(menu/menu-item.css);
+@import url(menu/menu-link.css);
+@import url(menu/menu-lista.css);
+/* Cabeçalho */
+header.cabecalho{
+    align-items: center;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
