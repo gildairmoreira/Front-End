@@ -18,7 +18,7 @@ header.cabecalho{
         padding: 0 1rem;
     }
 }
-@media screen and (max-width: 540px){
+@media screen and (max-width: 660px){
     .cabecalho{
         display: flex;
         flex-direction: column;
