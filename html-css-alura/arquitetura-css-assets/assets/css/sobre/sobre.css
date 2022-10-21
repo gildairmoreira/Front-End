@@ -1,0 +1,7 @@
+@import url(sobre-titulo.css);
+@import url(sobre-descricao.css);
+
+.sobre{
+    text-align: center;
+    padding: 2.5rem;
+}
