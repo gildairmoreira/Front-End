@@ -11,3 +11,23 @@ header.cabecalho{
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
+@media screen and (max-width: 0){
+    .cabecalho{
+        justify-content: center;
+        padding: 0 1rem;
+    }
+}
+@media screen and (max-width: 540px){
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .cabecalho{
+        padding: 0 5rem;
+        justify-content: space-between;
+    }
+}
