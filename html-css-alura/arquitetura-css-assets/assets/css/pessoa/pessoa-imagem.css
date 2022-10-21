@@ -1,9 +1,8 @@
 .pessoa__imagem{
-    background-color: blue;
     background-position: center;
-    border-radius: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 100%;
     margin: 0 auto;
     height: 300px;
     width: 300px;
