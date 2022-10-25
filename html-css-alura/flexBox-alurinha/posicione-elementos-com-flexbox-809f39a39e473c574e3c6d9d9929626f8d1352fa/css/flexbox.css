@@ -1,7 +1,10 @@
-.cabecalhoPrincipal-titulo{
-    display: inline-block;
+.cabecalhoPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .cabecalhoPrincipal-nav{
-    display: inline-block;
+    display: flex;
+    
 }
