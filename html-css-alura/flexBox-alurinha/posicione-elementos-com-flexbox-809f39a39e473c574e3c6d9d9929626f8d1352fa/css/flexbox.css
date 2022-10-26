@@ -7,10 +7,32 @@
 .cabecalhoPrincipal-nav{
     display: flex;
 }
+/* Nossos cursos */
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
 
+.conteudoPrincipal-cursos-link{
+    width: 23%;
+    margin: 1%;
+}
+.conteudoPrincipal-cursos-link:nth-child(4n){
+    margin-right: 0;
+}
+.conteudoPrincipal-cursos-link:nth-child(4n+1){
+    margin-left: 0;
+}
+
+
+/* mapa de cursos */
 .rodapePrincipal-navMap-list{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+    height: 250px;
 }
 
 /* ULTIMO */
@@ -33,4 +55,15 @@
 
 .rodapePrincipal-contatoForm-fieldset{
     display: flex;
+}
+
+/* MOBA */
+
+.cabecalhoPrincipal-nav{
+    flex-direction: column;
+}
+.cabecalhoPrincipal .container{
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
 }
