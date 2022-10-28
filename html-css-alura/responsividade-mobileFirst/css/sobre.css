@@ -32,3 +32,10 @@
 
     margin-bottom: 1rem;
 }
+
+.sobre__imagem{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+}
