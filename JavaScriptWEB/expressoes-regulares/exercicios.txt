@@ -1,0 +1,29 @@
+ Ex01: Pegar as notas e nomes dos alunos com nota entre 7.2 e 7.9
+ 
+ 9.8 - Robson, 7.1 - Teresa, 4.5 - Armênio, 6.5 - Zulu, 7.7 - Stefania, 7.8 - João, 5.0 - Romeu, 7.2 - Pompilho, 3.1 - Reinaldo, 7.3 - Bernadete, 4.7 - Cinério
+
+Resp: [7]\.[2-9]\s+-\s+[^,]+  ---►[^,]+ que pega qualquer dígito que não seja uma vírgula
+___________________________________________________________
+
+Ex02: Pegar o CPF dos dados abaixo
+
+    João Fulano,123.456.789-00,21 de Março de 1993,(21) 3079-9987,Rua do Ouvidor,50,20040-030,Rio de Janeiro
+
+Resp: \d{3}\.?\d{3}\.?\d{3}[-.]?\d{2}
+___________________________________________________________
+
+Ex03: Pegar a Data de Nascimento dos dados abaixo
+
+    João Fulano,123.456.789-00,21 de Março de 1993,(21) 3079-9987,Rua do Ouvidor,50,20040-030,Rio de Janeiro
+
+Resp:[1-3]?\d\s+de\s+[A-Z][a-zç]{1,8}\s+de\s+[12]\d{3}
+___________________________________________________________
+
+Ex04: Pegar apenas as palavras GARROTE SERROTE ROTEIRO de:
+
+    BALEIRO GARROTE SERROTE GOLEIRO ROTEIRO 
+
+Resp:[A-Z]*ROT[A-Z]+
+___________________________________________________________
+
+Ex05: 
