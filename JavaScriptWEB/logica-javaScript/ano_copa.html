@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ano copa JS</title>
+</head>
+
+<body>
+    <script>
+        function pulalinha()
+        {
+            document.write("<br>");
+            document.write("<br>");
+        }
+        function mostra(frase)
+        {
+            document.write(frase);
+            pulalinha();
+        }
+
+        let anoCopa = 1930;
+        let limite = parseInt(prompt('Qual o limite'));
+
+         while (anoCopa <= limite){
+            mostra("Teve copa em" + anoCopa)
+            anoCopa += 4
+        }
+
+        alert('FIM');
+
+    </script>
+</body>
+
+</html>
