@@ -4,7 +4,7 @@ let linguagem = window.prompt('Qual linguagem de programação você está estud
 
 document.write(`Olá ${nome}, Você tem ${idade} anos de idade e já está aprendendo ${linguagem}`)
 
-let estudo = window.prompt(`Você gosta de Estudar JavaScript? Responda com 1 para SIM OU 2 PARA NÃO`)
+let estudo = window.prompt(`Você gosta de Estudar ${linguagem}? Responda com 1 para SIM OU 2 PARA NÃO`)
 
 if (estudo == 1 || estudo == 2){
     if (estudo == 1){
