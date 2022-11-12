@@ -115,7 +115,8 @@ body {
 .cartao__conteudo {
     padding: 16px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+    grid-template-columns: auto 1fr;
 
 }
 .cartao__destaque {
@@ -140,7 +141,7 @@ body {
     content: "\e90c";
     margin-right: 8px;
 }
-.cartao__info--visualizacao::before {
+.cartao__info--vizualizacoes::before {
     content: "\e90f";
     margin-right: 8px;
 }
