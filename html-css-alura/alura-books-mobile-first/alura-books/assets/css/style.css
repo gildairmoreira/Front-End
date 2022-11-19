@@ -1,5 +1,7 @@
-@import url(cabecalho/cabecalho.css);
-@import url(banner/banner.css);
+@import url(cabecalho.css);
+@import url(banner.css);
+@import url(carossel.css);
+@import url(cards/card1.css);
 
 :root {
     --cor-de-fundo: #EBECEE;
