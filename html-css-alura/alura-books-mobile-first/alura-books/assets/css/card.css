@@ -59,9 +59,13 @@
 }
 
 @media screen and (min-width:1024px) {
-    .card{
+    .card {
         width: 40%;
         margin: 2rem auto;
+    }
+
+    .botoes__ancora:active {
+        background-color: var(--azul);
     }
 }
 
