@@ -42,3 +42,31 @@
         top: 60%;
     }
 }
+
+@media screen and (min-width:1728px) {
+    .carossel__container {
+        display: flex;
+        margin: 0 20vw 3rem 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        margin: 1rem 0;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .descricao__titulo {
+        font-size: 32px;
+    }
+
+    .descricao__texto {
+        font-size: 1rem;
+    }
+
+    .descricao {
+        margin-right: 2rem;
+    }
+}
