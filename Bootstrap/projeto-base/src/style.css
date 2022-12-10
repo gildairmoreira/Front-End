@@ -8,3 +8,16 @@
 .fonte__titulo{ 
     font-family: 'Pacifico','cursive';
 }
+
+.cor__especial {
+    color: darkred;
+}
+
+.botao__cor-especial{
+    background-color: darkred;
+    color: white;
+}
+
+.borda__cor-especial {
+    border-color: darkred;
+}
