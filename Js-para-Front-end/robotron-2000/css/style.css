@@ -1,6 +1,8 @@
 :root {
     --main-cinza: #CCCCCC;
-    --main-branco: #FFFFFF;
+    --main-branco: #ffffff;
+    --main-azul: rgb(0, 81, 255);
+    --main-azul-borda: blue;
     --main-preto: #000000;
 }
 
@@ -61,7 +63,7 @@ main {
 .box {
     background: rgba(0,0,0,0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
-    border-left: 5px solid var(--main-cinza);
+    border-left: 5px solid var(--main-azul-borda);
     height: 80%;
 }
 
@@ -84,7 +86,7 @@ main {
 }
 
 .peca-titulo {
-    color: var(--main-branco);
+    color: var(--main-azul);
     text-transform: uppercase;
     font-size: 2.5em;
 }
@@ -105,7 +107,7 @@ main {
     background: none;
     border: 0;
     margin: 0 1rem;
-    color: var(--main-branco);
+    color: var(--main-azul);
     text-align: center;
     font-size: 2.5em;
     display: inline-flex;
@@ -119,7 +121,7 @@ main {
     height: 40px;
     line-height: 44px;
     border-radius: 50%;
-    color: var(--main-cinza);
+    color: var(--main-azul-borda);
     font-size: 4em;
     background: var(--main-preto);
     text-align: center;
@@ -137,15 +139,16 @@ main {
     text-transform: uppercase;
     padding: 0.2em 1em;
     float: right;
-    border: 3px solid var(--main-branco);
+    border: 3px solid var(--main-azul);
     background: var(--main-branco);
     clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
     cursor: pointer;
 }
 
 .producao:hover {
-    background: var(--main-preto);
-    color: var(--main-branco)
+    background: var(--main-azul);
+    color: var(--main-branco);
+    border: 3px solid var(--main-preto);
 }
 
 
@@ -165,7 +168,7 @@ main {
 
 .estatistica-titulo {
     font-size: 1.5em;
-    border-bottom: 1px solid var(--main-cinza);
+    border-bottom: 1px solid var(--main-azul-borda);
     flex-basis: 40%;
     text-transform: uppercase;
     order: 1
@@ -183,7 +186,7 @@ main {
     content: "";
     display: block;
     padding-bottom: 100%;
-    border: 1px solid var(--main-cinza);
+    border: 1px solid var(--main-azul-borda);
     border-radius: 50%;
 }
 
