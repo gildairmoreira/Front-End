@@ -1,9 +1,21 @@
-const robotron = document.querySelector("#robotron")
+const subtrair = document.querySelector("#subtrair")
+const somar = document.querySelector("#somar")
 
-robotron.addEventListener("click", () => {
-    console.log("cliquei no Robô.")
+
+const controle = document.querySelectorAll("[data-controle]")
+
+controle.forEach( (elemento) =>{
+    elemento.addEventListener("click", (evento) =>{
+        manipulaDados(evento.target.dataset.controle, evento.target.parentNode)
+    })
 })
 
-function dizOI (nome){
-    console.log('oi meu chapa')
+function manipulaDados(operacao, controle)
+{
+    const peca = controle.querySelector("[data-contador]")
+    if (operacao === "-"){
+        peca.value = parseInt(peca.value) - 1;
+    } else { 
+        peca.value = parseInt(peca.value) + 1; 
+    }
 }
