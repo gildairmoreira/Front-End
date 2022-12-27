@@ -1,4 +1,4 @@
-async function buscaEndereco()
+async function buscaEndereco(cep)
 {
     try
     {
@@ -12,8 +12,9 @@ async function buscaEndereco()
     } catch(erro){
         console.log(erro);
     }
-}
+}   
 
-let ceps = ['01001000','35835000']
-let conjuntoCeps = ceps.map(valores => buscaEndereco(valores))
-Promise.all(conjuntoCeps).then(respostas => console.log(respostas))
+var cep = document.getElementById('cep')
+cep.addEventListener("focusout", () => buscaEndereco(cep.value))
+
+
