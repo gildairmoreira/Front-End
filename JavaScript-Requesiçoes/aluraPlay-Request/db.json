@@ -64,39 +64,25 @@
       "id": 9
     },
     {
-      "titulo": "TUDO que você deve estudar de JavaScript antes do React",
-      "descricao": "142 mil visualizações",
-      "url": "https://www.youtube.com/embed/37SwqREHRGI",
+      "titulo": "Logs no Android: boas práticas para otimização e aplicação | #AluraMais",
+      "descricao": "2 mil visualizações",
+      "url": "https://www.youtube.com/embed/viRW15_qUZw",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
       "id": 10
     },
     {
-      "titulo": "Acessibilidade Web com Charles Assunção | #HipstersPontoTube",
-      "descricao": "1.1 mil visualizações",
-      "url": "https://www.youtube.com/embed/gnO_6NDfQHI",
+      "titulo": "Conhecendo NestJS | #AluraMais",
+      "descricao": "5 mil visualizações",
+      "url": "https://www.youtube.com/embed/YHpG6t91oW8",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
       "id": 11
     },
     {
-      "titulo": "C# - Boas PRÁTICAS de programação | #HipstersPontoTube",
-      "descricao": "3 mil visualizações",
-      "url": "https://www.youtube.com/embed/UzWatUjuaNI",
+      "titulo": "Greg Melhor que caio",
+      "descricao": "4 mil visualizações",
+      "url": "https://www.youtube.com/embed/9s9KIsp1tDI",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
       "id": 12
-    },
-    {
-      "titulo": "Grandes sistemas em PHP com Vinicius Dias | #HipstersPontoTube",
-      "descricao": "7.4 mil visualizações",
-      "url": "https://www.youtube.com/embed/arZCoJMSTlI",
-      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
-      "id": 13
-    },
-    {
-      "titulo": "Arquitetura de sistemas com Fabio Akita | #HipstersPontoTube",
-      "descricao": "99 mil visualizações",
-      "url": "https://www.youtube.com/embed/oedWxgAZc2A",
-      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
-      "id": 14
     }
   ]
 }
