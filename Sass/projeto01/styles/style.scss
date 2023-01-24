@@ -1,5 +1,9 @@
+// VARIAVEIS
+
 $cor-principal: #FF8B13;
 $cor-secundaria: #ECECEC;
+
+// FUNÇOES
 
 @mixin reset {
     margin: 0;
@@ -17,6 +21,7 @@ $cor-secundaria: #ECECEC;
     }
 }
 
+// CSS COM ANINHAMENTO
 
 body {
     @include reset();
