@@ -5,11 +5,11 @@ import { Negociacao } from "./negociacao.js";
 export class Negociacoes {
     private negociacoes: Negociacao[] = []  // NãoSimplificado Array<Negociacao>
 
-    adiciona(negociacao: Negociacao){
+    public adiciona(negociacao: Negociacao){
         this.negociacoes.push(negociacao);
     }
 
-    lista(): readonly Negociacao[]  // NãoSimplificado ReadonlyArray<Negociacao>
+    public lista(): readonly Negociacao[]  // NãoSimplificado ReadonlyArray<Negociacao>
     {
         return this.negociacoes;
     }

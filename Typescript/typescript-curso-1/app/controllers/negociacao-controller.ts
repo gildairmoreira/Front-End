@@ -12,6 +12,9 @@ export class NegociacaoController
   private negociacoesView = new NegociacoesView('#negociacoesView');
   private mensagemView = new MensagemView('#mensagemView');
 
+  private readonly DOMINGO = 0
+  private readonly SABADO = 6
+
   constructor()
   {
     this.inputData = document.querySelector('#data');
@@ -20,29 +23,48 @@ export class NegociacaoController
     this.negociacoesView.update(this.negociacoes);
   }
 
-  adiciona(): void
+  public adiciona(): void
   {
     const negociacao = this.criaNegociacao();
-    this.negociacoes.adiciona(negociacao)
-    this.negociacoesView.update(this.negociacoes);
-    this.mensagemView.update('Negociação Adicionada com Sucesso');
+    if (!this.ehDiaUtil(negociacao.data))
+    {
+      this.mensagemView
+        .update('Apenas Negociações em dias úteis são aceitas');
+      return;
+    }
+    
+    this.negociacoes.adiciona(negociacao);
     this.limparFormulario();
+    this.atualizaView();
   }
 
-  criaNegociacao(): Negociacao{
-  const exp = /-/g;
-  const date = new Date(this.inputData.value.replace(exp, ','));
-  const quantidade = parseInt(this.inputQuantidade.value)
-  const valor = parseFloat(this.inputValor.value);
-  return new Negociacao(date, quantidade, valor);
+  ehDiaUtil(data: Date)
+  {
+    return data.getDay() > this.DOMINGO && data.getDay() < this.SABADO
+  }
 
-}
+  private criaNegociacao(): Negociacao
+  {
+    const exp = /-/g;
+    const date = new Date(this.inputData.value.replace(exp, ','));
+    const quantidade = parseInt(this.inputQuantidade.value)
+    const valor = parseFloat(this.inputValor.value);
+    return new Negociacao(date, quantidade, valor);
 
-limparFormulario(): void{
-  this.inputData.value = '';
-  this.inputQuantidade.value = '';
-  this.inputValor.value = '';
+  }
 
-  this.inputData.focus()
-}
+  private limparFormulario(): void
+  {
+    this.inputData.value = '';
+    this.inputQuantidade.value = '';
+    this.inputValor.value = '';
+
+    this.inputData.focus()
+  }
+
+  private atualizaView(): void
+  {
+    this.negociacoesView.update(this.negociacoes);
+    this.mensagemView.update('Negociação Adicionada com Sucesso');
+  }
 }
