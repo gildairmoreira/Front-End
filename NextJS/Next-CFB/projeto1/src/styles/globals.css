@@ -3,4 +3,10 @@
 @tailwind utilities;
 
 :root {
+
+}
+
+.subtitulo {
+  color: aqua;
+  font-weight: bold;
 }
