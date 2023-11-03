@@ -15,6 +15,7 @@ function Topo()
         <div className="subtitulo">Curso de React</div>
       </div>
       <div>{nome}</div>
+      
     </div>
   )
 }
